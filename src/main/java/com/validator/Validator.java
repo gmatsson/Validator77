@@ -11,4 +11,12 @@ public class Validator {
             return "False";
     }
 
+    public String isPalindrome(String str) {
+
+        if(str.equals(new StringBuilder(str).reverse().toString()))
+            return "True";
+        else
+            return "False";
+    }
+
 }

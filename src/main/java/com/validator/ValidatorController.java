@@ -20,4 +20,12 @@ public class ValidatorController {
         return new ModelAndView("index").addObject("result", result);
     }
 
+    @PostMapping("/isPalindrome")
+    public ModelAndView isPalindrome(@RequestParam String str2) {
+        Validator vali = new Validator();
+        String result2 = vali.isPalindrome(str2);
+
+        return new ModelAndView("index").addObject("result2", result2);
+    }
+
 }
