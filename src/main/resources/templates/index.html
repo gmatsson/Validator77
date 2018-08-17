@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="UTF-8">
+    <title>Validator</title>
+</head>
+<body>
+<h2>Is number validator</h2>
+<form action="/isNumber" method="post">
+    <input type="text" name="str">
+    <input type="submit">
+</form>
+<h3 th:text="${result}"></h3>
+
+<h2>Is palindrome validator</h2>
+<form action="/isPalindrom" method="post">
+    <input type="text" name="str2">
+    <input type="submit">
+</form>
+<h3 th:text="${result2}"></h3>
+</body>
+</html>
